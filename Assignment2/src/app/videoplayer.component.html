@@ -1,0 +1,12 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container ">
+  <div class="row ">
+      <div class="column">
+   <player-component></player-component>
+   <controler-player [playItem]="playItem" (unlikeClicked)="onUnlikeClicked($event)" (likeClicked)="onLikeClicked($event)"></controler-player>
+   </div>
+   <div class="column">
+  <playlist-component [playItems]="playItems"  (clickedOnPlaylist)="onPlaylistClicked($event)"></playlist-component>
+</div>
+    </div>
+    </div>

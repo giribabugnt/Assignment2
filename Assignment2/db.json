@@ -1,0 +1,48 @@
+{
+  "youtube": [
+    {
+      "id": 1,
+      "title": "Sadhguru and Physics",
+      "url": "http://thenewcode.com/assets/videos/ocean-small.mp4",
+      "status": "added",
+      "approved": 1,
+      "likes": 27,
+      "unlike": 5,
+      "currentStatus": "playing",
+      "exitplayprogress": 30
+    },
+    {
+      "id": 2,
+      "title": "Angular 6 Tutorial",
+      "url": "http://thenewcode.com/assets/videos/downtown-los-angeles.mp4",
+      "status": "added",
+      "approved": 1,
+      "likes": 6,
+      "unlike": 6,
+      "currentStatus": "paused",
+      "exitplayprogress": 0
+    },
+    {
+      "id": 3,
+      "title": "Nikon P900 83X Zoom",
+      "url": "http://techslides.com/demos/sample-videos/small.mp4",
+      "status": "added",
+      "approved": 1,
+      "likes": 10,
+      "unlike": 1,
+      "currentStatus": "paused",
+      "exitplayprogress": 80
+    },
+    {
+      "id": 4,
+      "title": "Understanding Javascript",
+      "url": "http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4",
+      "status": "edited",
+      "approved": 1,
+      "likes": 25,
+      "unlike": 5,
+      "currentStatus": "stopped",
+      "exitplayprogress": 80
+    }
+  ]
+}

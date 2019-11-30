@@ -1,0 +1,68 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container">
+  <h2 style="margin-left: 5%; text-align: center">Add video </h2>
+  <form #addVideo = "ngForm" (ngSubmit) = "onAddVideo(addVideo.value)" ngNativeValidate >
+     <div class="form-group row" style="margin-left: 5%;">
+      <label for="staticEmail" class="col-sm-2 col-form-label">Title : </label>
+      <div class="col-mb-10">
+        <input type="text"  name="title" placeholder="Video Title" required ngModel>
+        <div>{{titleError}}</div>
+      </div>
+    </div>
+    <div class="form-group row" style="margin-left: 5%;">
+      <label for="staticEmail" class="col-sm-2 col-form-label">Video URL :</label>
+      <div class="col-mb-10">
+        <input type="url" required ngModel  name="url" #url placeholder="VIDEO URL.."  >
+      
+      </div>
+      
+    </div>
+    <div class="input-group mb-6" style="margin-left: 5%;">
+        <button type="submit" class="btn btn-primary" >Add Video</button>
+    </div>
+  </form>
+   <br/>
+    <table class="table table-bordered" style="width: 80%; margin-left: 5%;">
+      <thead>
+        <tr>
+          <th scope="col">S.no</th>
+          <th scope="col">Title</th>
+          <th scope="col">URL</th>
+          <th scope="col" colspan="3" style="text-align: center">Action</th>
+          
+        </tr>
+      </thead>
+      <tbody *ngFor="let playItem of playItems">
+        <tr>
+          <th scope="row">{{playItem.id}}</th>
+          <td>{{playItem.title}}</td>
+          <td contenteditable="true">
+            
+              <span  >{{playItem.url}}</span>
+              
+            </td>
+          <td>
+            <div class="input-group mb-6">
+              <button type="button" class="btn btn-primary" (click)="editVideo(playItem)">Edit</button>
+          </div>
+          </td>
+          <td>
+            <div class="input-group mb-6">
+              <button type="button" class="btn btn-primary" (click)="deleteVideo(playItem.id)">Delete</button>
+          </div>
+          </td>
+          <td>
+            <div class="input-group mb-6">
+              <div *ngIf="playItem.approved == 1">
+              <button type="button" disabled="true" class="btn btn-primary">Approve</button>
+            </div>
+            <div *ngIf="playItem.approved == 0">
+                <button type="button" class="btn btn-primary" (click)="approveVideo(playItem)">Approve</button>
+              </div>
+          </div>
+          </td>
+           </tr>
+       
+      </tbody>
+    </table>
+    </div>

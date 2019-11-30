@@ -1,0 +1,15 @@
+
+       
+       
+       <div *ngFor="let playItem of playItems">
+         <div *ngIf="playItem.approved == 1">
+            <button type="button" class="buttonControl"   (click)="run1(playItem)" id="play">
+                <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+         </button>
+        {{playItem.title}}
+         <br/>
+         <br/>
+         </div>
+        </div>
+       
+      

@@ -1,0 +1,87 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css";
+
+.divplayer {
+    height: 400px;
+    width: 60%;
+    background-color:dimgray;
+  }
+  .divplayer2 {
+    height: 60px;
+    background-color: #f2f2f2;
+   
+  }
+  .buttonControl{
+          padding: 15px;
+          border: none;
+          border-radius: 30px;
+          margin-left:20px;
+          background:lightcyan
+      }
+      .buttonControl1{
+          padding: 10px;
+          border: none;
+          margin-left:20px;
+          background: none;
+          color:cornflowerblue;
+          font-size:18px;
+      }
+      .buttonControl2{
+          padding: 15px;
+          border: none;
+          border-radius: 30px;
+          margin-left:25px;
+          background:lightcyan
+      }
+      .buttonControl1 span.glyphicon {
+          margin-right: 2px; 
+          display: inline-block;
+              }
+  
+              .redColor{
+          color:red !important;
+      }
+  
+      /* Style the container/contact section */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+  
+  }
+ 
+  
+
+  .tooltip {
+    background-color: yellow;
+    padding: 20px;
+    display: none;
+  }
+    
+  span:hover + .tooltip {
+    display: block;
+  }
+    
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+   
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }

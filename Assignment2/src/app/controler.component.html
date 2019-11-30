@@ -1,0 +1,33 @@
+<div id="video-controls"  class="divplayer2">
+        <button type="button" class="buttonControl"   onclick="play()" id="play">
+                <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+        </button>
+        <button type="button" class="buttonControl"  disabled="true" onclick="pause()" id="pause">
+                <span class="glyphicon glyphicon-pause" aria-hidden="true"></span>
+        </button>
+        <button type="button"  class="buttonControl" disabled="true" onclick="stop()" id="stop">
+                <span class="glyphicon glyphicon-stop" aria-hidden="true"></span>
+        </button>
+        <button type="button"  class="buttonControl"  onclick="refresh()" id="refresh">
+            <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span>
+    </button>
+        <button id="minus" class="buttonControl" onclick="volume('minus')">
+                <span class="glyphicon glyphicon-volume-down" aria-hidden="true"></span>
+            </button>
+            <button id="plus" class="buttonControl" onclick="volume('plus')">
+                    <span class="glyphicon glyphicon-volume-up" aria-hidden="true"></span>
+            </button>
+            <button id="plus" class="buttonControl" onclick="volume('headphone')">
+                    <span class="glyphicon glyphicon-headphones" aria-hidden="true"></span>
+            </button>
+            <button class="buttonControl1" (click)="addLike(playItem)">
+                <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+                <span >{{playItem.likes}}</span>
+            </button>
+            <button class="buttonControl1 redColor" (click)="addUnLike(playItem)">
+                <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span>
+                <span >{{playItem.unlike}}</span>
+            </button>
+        
+    
+    </div>
